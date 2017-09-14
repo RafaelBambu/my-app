@@ -68,24 +68,27 @@
 </div>
 -->
 <ztw-carousel style="padding-top: 1px; padding-bottom: 62px; width: 100%; background-color: #6584fb; text-align:center;">
-    <ztw-carousel-item >
+  <ztw-carousel-item>
     <img [src]='assets/images/descarga-appstore.png' ztw-carousel-img>
     <div ztw-carousel-header>
-        <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
-            Testimonios
-          </p>
-          <img style="margin: 1em;" src="assets/images/chica-2.png" alt="">
-          <p style="width: 694px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
-            “¡Mi encuentro con Tom fue genial!, definitivamente seguiremos en contacto. Gracias Tom”
-          </p>
-          <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;
+      <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
+        Testimonios
+      </p>
+      <img style="margin: 1em;" src="assets/images/chica-2.png" alt="">
+      <p style="width: 694px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
+        “¡Mi encuentro con Tom fue genial!, definitivamente seguiremos en contacto. Gracias Tom”
+      </p>
+      <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;
           ">
-            Miguel Arellano
-          </p>
+        Miguel Arellano
+      </p>
     </div>
   </ztw-carousel-item>
 </ztw-carousel>
 
+<button md-raised-button class="md-raised md-primary go-top" (click)="onEdit()">
+  <img src="assets/images/subir.png" >
+</button>
 
 
 <div class="soy-proovedor">
@@ -130,9 +133,14 @@
     </div>
     <div class="social">
       <div class="social-wra">
-        <img src="assets/images/facebook.png" alt="">
-        <img src="assets/images/instagram.png" alt="">
-        <img src="assets/images/twitter.png" alt="">
+
+        <a href="https://www.facebook.com/BB6ixNetworking">
+          <div class="fb-footer"></div>
+        </a>
+        <a href="https://twitter.com/BB6ix_com?lang=es">
+          <div class="tt-footer">
+          </div>
+        </a>
       </div>
     </div>
   </div>

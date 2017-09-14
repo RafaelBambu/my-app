@@ -230,3 +230,30 @@ nav img{
 [_nghost-c2] {
     position: relative !important;
 }
+
+.go-top{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    background: none;
+    border: none;
+}
+
+
+.fb-footer{
+    background-image: url('/assets/images/facebook.png');
+    width: 40px;
+    height: 40px;
+}
+.tt-footer{
+    background-image: url('/assets/images/twitter.png');
+    width: 40px;
+    height: 40px;
+}
+
+.fb-footer:hover{
+    background-image: url('/assets/images/facebook_hover.svg');
+}
+.tt-footer:hover{
+    background-image: url('/assets/images/twitter_hover.svg');
+}
