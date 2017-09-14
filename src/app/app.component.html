@@ -1,25 +1,147 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
+<div class="fondo">
+  <div class="opacidad">
+    <nav>
+      <img src="assets/images/logo.png">
+      <div class="login">
+        <div class="login-wrapper">
+          <span>
+            ¿Ya tienes cuenta? <a routerLink="/login" href="#"> Inicia sesión </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div style="text-align:center; padding-bottom: 80px;">
+      <span class="poder">
+      <p> 
+        El poder del Networking al alcance de tus manos
+      </p>
+    </span>
+      <span class="somos">
+      <p>
+        Somos una plataforma digital que ayuda a crear<br>
+        vínculos entre proveedores y clientes a través de una red de contactos
+      </p>
+    </span>
+      <button type="button" routerLink="/signup" class="bb-button" md-raised-button>Únete</button>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
+
+<p style="margin-top: 64px;  margin-bottom: 38px; height: 58px; font-family: oxigenRegular; font-size: 32px; text-align: center; color: #4d4d4d;">
+  Ventajas de trabajar con BB6ix
+</p>
+
+<div class="ventajas">
+  <div class="crece">
+    <img src="assets/images/icon-marca.png" alt="">
+    <p style="font-family:oxigenBold;">Crece tu negocio</p>
+    <p style="font-family:muliRegular;">Incrementa tus ventas a través de <br>nuesta red de clientes que <br>necesitan tus servicios</p>
+  </div>
+
+  <div class="proveedores">
+    <img src="assets/images/icon-confianza.png" alt="">
+    <p style="font-family:oxigenBold;">Proveedores de confianza</p>
+    <p style="font-family:muliRegular;">Encuentra proveedores calificados <br>y recomendados por gente<br> cercana a tu red de contactos.</p>
+  </div>
+
+  <div class="crea">
+    <img src="assets/images/icon-red.png" alt="">
+    <p style="font-family:oxigenBold;">Crea tu red</p>
+    <p style="font-family:muliRegular;">Posiciona tu marca y servicios en <br>tu red, generando mayor impacto <br>a tu negocio en ventas.</p>
+  </div>
+
+</div>
+<!--
+<div class="testimonios" style="padding-top: 1px; padding-bottom: 62px; width: 100%; background-color: #6584fb; text-align:center;">
+  <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
+    Testimonios
+  </p>
+  <img style="margin: 1em;" src="assets/images/chica-2-copy-2.png" alt="">
+  <p style="width: 694px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
+    “¡Mi encuentro con Tom fue genial!, definitivamente seguiremos en contacto. Gracias Tom”
+  </p>
+  <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;
+  ">
+    Miguel Arellano
+  </p>
+
+</div>
+-->
+<ztw-carousel style="padding-top: 1px; padding-bottom: 62px; width: 100%; background-color: #6584fb; text-align:center;">
+    <ztw-carousel-item >
+    <img [src]='assets/images/descarga-appstore.png' ztw-carousel-img>
+    <div ztw-carousel-header>
+        <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
+            Testimonios
+          </p>
+          <img style="margin: 1em;" src="assets/images/chica-2.png" alt="">
+          <p style="width: 694px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
+            “¡Mi encuentro con Tom fue genial!, definitivamente seguiremos en contacto. Gracias Tom”
+          </p>
+          <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;
+          ">
+            Miguel Arellano
+          </p>
+    </div>
+  </ztw-carousel-item>
+</ztw-carousel>
+
+
+
+<div class="soy-proovedor">
+  <div routerLink="/signup" class="soy_p">
+    <p id="soy">Soy Proveedor</p><br>
+    <p id="description">Quiero crecer mi negocio y quiero <br>hacer crecer mi reputación.</p>
+  </div>
+
+  <div class="imagen-p">
+  </div>
+
+
+</div>
+
+<div class="soy-cliente">
+  <div routerLink="/signup" class="soy_c">
+    <p id="soy">Soy Cliente</p><br>
+    <p id="description">Busco proveedores confiables para<br> hacer crecer mi negocio.</p>
+  </div>
+  <div style="background-color: rgba(163, 232, 246, 0.3);" class="imagen-c">
+  </div>
+</div>
 
 
 
 
+<footer>
+  <div class="wrapper-footer" style="display:flex; justify-content:space-around; padding-top: 5%; width:100%; padding-bottom: 42px;">
+    <div style="cursor: pointer; display: flex; align-items: center;" routerLink="/terms">
+      <p style="font-family:muliRegular; color: #4d4d4d;">
+        Términos y condiciones
+      </p>
+    </div>
+    <div style="cursor: pointer; display: flex; align-items: center;" routerLink="/privacy">
+      <p style="font-family:muliRegular;color: #4d4d4d;">
+        Política de privacidad
+      </p>
+    </div>
+    <div (click)="openDownloadDialog()" class="download">
+      <img src="assets/images/descarga-appstore.png" alt="">
+      <img src="assets/images/descarga-google.png" alt="">
+    </div>
+    <div class="social">
+      <div class="social-wra">
+        <img src="assets/images/facebook.png" alt="">
+        <img src="assets/images/instagram.png" alt="">
+        <img src="assets/images/twitter.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; justify-content:center; font-family:muliRegular; color: #4d4d4d; font-size: 14px; padding-bottom: 12px;">
+    © 2017 BB6ix Todos los derechos reservados.
+  </div>
 
-
+</footer>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+<script src="https://unpkg.com/slick-carousel@1.6.0/slick/slick.js"></script>

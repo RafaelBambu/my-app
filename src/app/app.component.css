@@ -1,1 +1,232 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.opacidad{
+    background-color: rgba(51, 51, 51, 0.6);
+}
+
+.bb-button{
+	width: 272px;
+	height: 40px;
+}
+nav{
+    display: flex;
+    padding-top: 3%;
+}
+
+nav img{
+    padding-left: 4%;
+}
+
+.login{
+    display: flex !important;
+    justify-content: flex-end !important;    
+    width: 100%;
+    padding-right: 3%;
+}
+
+.login-wrapper{
+    position: fixed;
+    top: 22px;
+    color: white;
+    right: 56px;
+    width: 272px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    background-color: rgba(51,51,51,0.6);
+    font-family:muliRegular;
+    justify-content: space-around;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.login-wrapper a{
+    font-family: muliBold;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    color: #1ac5e8;    
+}
+
+.poder{
+    font-family: oxigenRegular;
+    font-size: 40px;
+    color: #a3e8f7;
+    margin-top:5%; 
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    p{
+        margin: 3%;
+    }
+}
+
+.somos{
+    font-family: muliRegular;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    p{
+        margin-bottom: 4%;
+    }
+}
+
+.unete{
+    width: 22%;
+    height: 5%;
+    border-radius: 20px;
+    background-color: #6584fb;
+    box-shadow: none;
+    border: none;
+    font-family: Muli;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ventajas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5%;
+    p{
+        margin: 1em;
+    }
+    img{
+        margin-bottom: 43px;
+    }
+}
+
+.crece{
+    width: 100%;
+    text-align: center;
+}
+
+.proveedores{
+    width: 100%;
+    text-align: center;
+}
+
+.crea{    
+    width: 100%;
+    text-align: center;
+}
+
+
+#soy{
+    
+    font-family: oxigenRegular;    
+    font-size: 36px;
+    text-align: center;
+    margin: 12% 0 0 0;
+}
+
+.download{
+    width: 26%;
+    display: flex;
+    justify-content: inherit;
+    height: 100%;
+    cursor: pointer;
+}
+
+.social{
+    width: 22%;
+    display: flex;
+    height: 100%;
+    justify-content: inherit;
+    margin-right: 6.5%;
+} 
+
+.social-wra{
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+}
+
+
+
+
+.imagen-c{
+    width: 50%;
+}
+
+
+.soy-cliente{
+    width: 100%;
+    height: 16.4%;
+    display: flex;
+}
+
+#description{
+    font-family: muliRegular;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24%;
+}
+
+
+.soy_c{
+    background-color: #e6f7f8;
+    color: #666666;    
+    width: 50%;
+    cursor: pointer;
+}
+
+.soy-proovedor{
+    width: 100%;
+    height: 16.4%;
+    display: flex;
+}
+
+.imagen-p{
+    width: 50%;
+    background-image: url('/assets/images/proveedor_filtro_small.jpg'); 
+    background-size: cover;
+}
+
+.imagen-c{
+    width: 50%;
+    background-image: url('/assets/images/cliente_filtro_small.jpg'); 
+    background-size: cover;
+}
+
+.soy_p{
+    background-color: #fafafe;
+    color: #666666;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+.soy-proovedor{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.soy-cliente{
+    display: flex;
+    flex-direction: row;
+}
+
+.soy_c:hover{
+    background-color: rgb(163, 231, 246);
+}
+
+.soy_c:hover ~ .imagen-c{
+    background-image: url('/assets/images/hover_cliente_small.jpg');
+}
+
+.soy_p:hover{
+    color: #fafafe;  
+    background-color: rgba(157, 155, 229, 0.63);
+}
+
+.soy_p:hover ~ .imagen-p{
+    background-image: url('/assets/images/hover_proveedor_small.jpg');
+}
+
+[_nghost-c2] {
+    position: relative !important;
+}

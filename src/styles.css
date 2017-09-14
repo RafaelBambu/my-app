@@ -1,1 +1,433 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700|Oxygen:400,700');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* Dialog style */
+
+md-dialog-container{
+	border-radius: 6px!important;
+}
+
+
+/* Button styles  */
+
+.bb-button{
+	border: none;
+	opacity: 1;
+	border-radius: 20px!important;
+	background-color: #6584fb;
+	color: white!important;
+	font-family: Muli;
+	font-size: 16px;
+	font-weight: 600;
+    text-align: center;
+    box-shadow: none!important;
+}
+
+.bb-button:disabled{
+	background-color: #6584fb!important;
+	opacity:0.55;
+}
+
+.bb-button .mat-button-ripple{
+	border-radius: 20px;
+}
+
+.bb-white-button{
+	border-radius: 16px!important;
+	border: solid 1px #6584fb!important;
+	font-family: Muli;
+	font-size: 16px!important;
+	line-height: 16px!important;
+	color: #6584fb!important;
+    box-shadow: none!important;
+}
+
+.bb-white-button .mat-button-ripple{
+    border-radius: 16px;
+}
+
+.bb-icon-input md-icon:not(.bb-suffix){
+    position: absolute;
+    top: 1px;
+}
+
+.bb-icon-input{
+	color: #666666;
+}
+
+.bb-icon-input .mat-input-underline .mat-input-ripple{
+	height: 1px;
+	background-color: #6584FB;
+}
+
+.bb-icon-input .mat-input-placeholder-wrapper, .bb-icon-input input{
+	text-indent: 28px;
+	
+}
+
+.bb-icon-input.mat-focused md-icon svg g path{
+	fill: #6584FB!important;
+}
+
+
+.bb-icon-input .mat-input-suffix{
+	position: relative;
+	width: 82%;
+}
+
+.bb-icon-input .mat-input-suffix span{
+	position: absolute;
+	bottom: 0;
+}
+
+.bb-password .mat-input-suffix{
+	position: initial;
+	width: initial;
+}
+
+.bb-password .mat-input-suffix span{
+	position: initial;
+	bottom: initial;
+}
+
+
+.bb-icon-input.mat-focused .mat-input-placeholder {
+	color: #6584FB;
+}
+
+md-checkbox .mat-checkbox-ripple .mat-ripple-element{
+	background-color: #6584FB!important;
+	opacity: 0.4;
+}
+
+md-checkbox .mat-checkbox-frame{
+	border-color: #b3b3b3;
+}
+
+.bb-icon-select md-pseudo-checkbox{
+	background-color: #6584FB!important;
+}
+
+.bb-icon-input.mat-input-invalid .mat-input-placeholder {
+	color: #ff5d38;
+}
+
+.bb-icon-input.mat-input-invalid md-icon svg g path{
+	fill: #ff5d38!important;
+}
+
+.bb-icon-input.mat-input-invalid .mat-input-underline .mat-input-ripple{
+	background-color: #ff5d38;
+}
+
+
+.bb-error{
+	font-family: Muli;
+	font-size: 12px;
+	text-align: left;
+	color: #b3b3b3;
+	top: 3em;
+	position: absolute;
+	left: 4px;
+	
+}
+
+.bb-icon-select{
+	position: relative;
+}
+
+.bb-icon-select md-icon{
+	position: absolute;
+	top: 21%;
+}
+
+.bb-icon-select md-select{
+	font-size: 14px!important;
+	font-family: 'Muli', sans-serif!important;
+	color: #666666!important;
+	width: 100%;
+}
+
+
+.bb-icon-select md-select .mat-select-placeholder{
+	padding: 0;
+	color: #b3b3b3;
+}
+
+.bb-icon-select md-select .mat-select-value-text{
+	color: #666666;
+}
+
+.bb-icon-select md-select .mat-select-placeholder, .bb-icon-select md-select .mat-select-value-text{
+	text-indent: 28px;
+	font-size: 14px!important;
+	font-family: 'Muli', sans-serif!important;
+}
+
+md-option{
+	padding-left: 24px!important;
+	font-family: 'Muli', sans-serif!important;
+	font-size: 14px!important;
+	color: #666666!important;
+}
+
+md-option .mat-pseudo-checkbox{
+	margin-right: 10px!important;
+}
+/* Input styles  */
+
+md-input-container{
+	font-family: 'Muli';
+}
+
+
+
+.bb-search md-input-container{
+	width: 50%;
+	height: 100%;
+}
+
+.bb-search md-input-container input{
+	padding-bottom: 9px;
+	text-transform: capitalize;
+}
+
+.bb-search md-input-container .mat-input-flex{
+	height: 100%;
+	padding: 0;
+	border-top: none;
+	align-items: center;
+}
+
+.bb-search md-input-container .mat-input-wrapper{
+	padding: 0;
+	border: none;
+	height: 100%;
+}
+
+
+.bb-search .bb-icon-input .mat-input-placeholder-wrapper, .bb-search .bb-icon-input input{
+	text-indent: 12%;
+}
+
+.bb-search .bb-icon-input md-icon{
+	top: 3px;
+}
+
+.bb-search md-input-container .mat-input-underline{
+	display: none!important;
+}
+
+.mat-autocomplete-panel .mat-option{
+	color: #b3b3b3!important;
+	line-height: 30px;
+	height: 30px;
+	text-transform: capitalize;
+}
+
+.mat-autocomplete-panel .mat-option:hover{
+	background: rgba(163,232,247, 0.3);
+}
+/* Check button styles  */
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+	background-color: #83d1d6;
+}
+
+/* Material select multiple options checkbox color */
+
+.mat-pseudo-checkbox.mat-pseudo-checkbox-checked, .mat-pseudo-checkbox.mat-pseudo-checkbox-indeterminate{
+	background-color: #83d1d6;
+}
+
+
+.mat-ripple{
+	color: #83d1d6;
+}
+
+.bb-tooltip{
+	display: flex;
+	align-items: center;
+	width: 190px!important;
+	height: 60.7px!important;
+	border-radius: 6px!important;
+	background-color: #4d4d4d;
+	font-family: Muli;
+	font-size: 12px;
+	text-align: left;
+	color: #ffffff;
+	padding-left: 12px!important;
+	padding-right: 0!important;
+	line-height: 1.4;
+}
+
+
+.bb-icon-gray svg g path{
+	fill: #e6e6e6!important;
+}
+
+.bb-icon-darkgray svg g path{
+	fill: #b3b2b3!important;
+}
+
+.bb-icon-blue svg g path{
+	fill: #83d1d6!important;
+}
+
+body{
+    margin: 0;
+}
+.fondo{
+    background-image: url('assets/images/fondo-landing.jpg');
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+}
+@font-face {
+    font-family: oxigenRegular;
+    src: url(assets/Oxygen/Oxygen-Regular.ttf);
+}
+
+@font-face {
+    font-family: oxigenBold;
+    src: url(assets/Oxygen/Oxygen-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: muliRegular;
+    src: url(assets/Muli/Muli-Regular.ttf);
+}
+
+@font-face {
+    font-family: muliBold;
+    src: url(assets/Muli/Muli-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: muliSemi;
+    src: url(assets/Muli/Muli-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: muliItalic;
+    src: url(assets/Muli/Muli-Italic.ttf);
+}
+
+
+
+/* Toolbar layout */
+
+md-toolbar md-toolbar-row{
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+md-toolbar .mat-toolbar-layout{
+	width: 100%;
+}
+
+
+/* Md Menu  */
+
+.mat-menu-item{
+	padding-left: 24px!important;
+	font-family: Muli;
+	font-size: 14px;
+	color: #666;
+}
+
+.mat-menu-item:not(:last-child){
+
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.mat-menu-panel{
+	width: 256px!important;
+}
+
+
+star-rating-comp {
+	div{
+		outline: 0;
+	}
+	.star.large{
+		width: 46px;
+		height: 46px;
+	}
+}
+
+snack-bar-container{
+	padding: 18px 24px!important;
+	margin-bottom: 26%;
+	background-color: #4d4d4d!important;
+}
+.mat-simple-snackbar{
+	font-family: Oxygen;
+	font-size: 16px;
+	text-align: left;
+	color: white;
+}
+
+// Helper styles
+
+
+.bb-capitalize{
+	text-transform: capitalize;
+}
