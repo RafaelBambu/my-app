@@ -34,20 +34,20 @@
 <div class="ventajas">
   <div class="crece">
     <img src="assets/images/icon-marca.png" alt="">
-    <p style="font-family:oxigenBold;">Crece tu negocio</p>
-    <p style="font-family:muliRegular;">Incrementa tus ventas a través de <br>nuesta red de clientes que <br>necesitan tus servicios</p>
+    <p style="font-family:oxigenBold; color: #4d4d4d">Crece tu negocio</p>
+    <p style="font-family:muliRegular; color: #666666">Incrementa tus ventas a través de <br>nuesta red de clientes que <br>necesitan tus servicios</p>
   </div>
 
   <div class="proveedores">
     <img src="assets/images/icon-confianza.png" alt="">
-    <p style="font-family:oxigenBold;">Proveedores de confianza</p>
-    <p style="font-family:muliRegular;">Encuentra proveedores calificados <br>y recomendados por gente<br> cercana a tu red de contactos.</p>
+    <p style="font-family:oxigenBold; color: #4d4d4d">Proveedores de confianza</p>
+    <p style="font-family:muliRegular; color: #666666">Encuentra proveedores calificados <br>y recomendados por gente<br> cercana a tu red de contactos.</p>
   </div>
 
   <div class="crea">
     <img src="assets/images/icon-red.png" alt="">
-    <p style="font-family:oxigenBold;">Crea tu red</p>
-    <p style="font-family:muliRegular;">Posiciona tu marca y servicios en <br>tu red, generando mayor impacto <br>a tu negocio en ventas.</p>
+    <p style="font-family:oxigenBold; color: #4d4d4d">Crea tu red</p>
+    <p style="font-family:muliRegular; color: #666666">Posiciona tu marca y servicios en <br>tu red, generando mayor impacto <br>a tu negocio en ventas.</p>
   </div>
 
 </div>
@@ -67,24 +67,39 @@
 
 </div>
 -->
-<ztw-carousel style="padding-top: 1px; padding-bottom: 62px; width: 100%; background-color: #6584fb; text-align:center;">
-  <ztw-carousel-item>
-    <img [src]='assets/images/descarga-appstore.png' ztw-carousel-img>
-    <div ztw-carousel-header>
-      <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
-        Testimonios
-      </p>
-      <img style="margin: 1em;" src="assets/images/chica-2.png" alt="">
-      <p style="width: 694px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
-        “¡Mi encuentro con Tom fue genial!, definitivamente seguiremos en contacto. Gracias Tom”
-      </p>
-      <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;
-          ">
-        Miguel Arellano
-      </p>
+<div class="testimonios" style="padding-top: 1px; padding-bottom: 62px; width: 100%; background-color: #6584fb; text-align:center;">
+  <p style="margin-top: 64px; margin-bottom: 23px; height: 58px; font-family: oxigenRegular; font-size: 32px;  text-align: center;  color: #ffffff;">
+    Testimonios
+  </p>
+  <div id="container">
+    <div ng2-carouselamos class="slides-wrapper" [items]="items" [width]="1350" [$prev]="prev" [$next]="next" [$item]="item">
     </div>
-  </ztw-carousel-item>
-</ztw-carousel>
+
+
+    <ng-template #prev>
+      <img src="assets/images/left-arrow.png" id="left" />
+    </ng-template>
+    <ng-template #next>
+      <img src="assets/images/right-arrow.png" id="right" />
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+
+      <div class="items">
+        <img src="{{ item.name }}">
+        <div style="width: 1350px;">
+          <p style="width: 771px; height: 89px;margin: 0 auto; font-family: muliItalic;  font-size: 28px;  text-align: center;  color: #e6f7f8;">
+            {{item.testimonio}}
+          </p>
+        </div>
+        <p style="margin: 1em; font-family: muliRegular;  font-size: 18px;  text-align: center;  color: #e6e6e6;">
+          {{item.nombre}}
+        </p>
+      </div>
+
+    </ng-template>
+  </div>
+</div>
+
 
 <button md-raised-button class="md-raised md-primary go-top" (click)="onEdit()">
   <img src="assets/images/subir.png" >
